@@ -37,7 +37,4 @@ spring:
         
       
 platform:
-  service:
-    center:
-      hostname: localhost
-      port: 8881
+  version: 1.0
