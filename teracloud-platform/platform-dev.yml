@@ -37,12 +37,21 @@ spring:
 platform:
   version: 1.0
   service:
-    monitor:
-      server:
-        host: localhost
-        port: 8881
     center:
       server:
         host: localhost
         port: 8888
+    monitor:
+      server:
+        host: localhost
+        port: 8881
+    mq:
+      server:
+        host: localhost
+        port: 8882
+    remote:
+      server:
+        host: localhost
+        port: 8883
+ 
     
