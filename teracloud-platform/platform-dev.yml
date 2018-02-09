@@ -40,7 +40,7 @@ platform:
     monitor:
       server:
         host: localhost
-        port: 8881
+        port: 8882
     center:
       server:
         host: localhost
