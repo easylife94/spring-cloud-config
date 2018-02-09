@@ -41,4 +41,8 @@ platform:
       server:
         host: localhost
         port: 8881
+    center:
+      server:
+        host: localhost
+        port: 8888
     
