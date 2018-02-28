@@ -1,13 +1,13 @@
-﻿# 数据库访问配置，此处使用mysql为例。
+﻿# 数据库访问配置，此处使用postgres为例。
 # 主数据源，默认的
 spring:
   teracloud:
       datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/teraclouddb
+        url: jdbc:mysql://localhost:3306/teraclouddb?useSSL=false
         username: root
-        password: terapassword
+        password: root
     # 下面为连接池的补充设置，应用到上面所有数据源中
     # 初始化大小，最小，最大
         initialSize: 5
@@ -33,6 +33,13 @@ spring:
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     # 合并多个DruidDataSource的监控数据
         useGlobalDataSourceStat: truee
+  jpa:
+    database: MYSQL
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      dialect: org.hibernate.dialect.MySQL5Dialect
 #平台配置
 platform:
   version: 1.0
