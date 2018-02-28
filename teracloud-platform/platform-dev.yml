@@ -1,11 +1,11 @@
-﻿# 数据库访问配置，此处使用postgres为例。
+﻿# 数据库访问配置，此处使用mysql为例。
 # 主数据源，默认的
 spring:
   teracloud:
       datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.102:3306/teraclouddb
+        url: jdbc:mysql://localhost:3306/teraclouddb
         username: root
         password: terapassword
     # 下面为连接池的补充设置，应用到上面所有数据源中
